@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:showIn="@layout/fw_activity_main"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/lblLoginName"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:text="Login Name"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="50dp" />
+        <EditText
+            android:id="@+id/txtLoginName"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="10dp" />
+    </TableRow>
+
+         <TableRow>
+            <TextView
+                android:id="@+id/lblLoginPassword"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="50dp" />
+            <EditText
+                android:id="@+id/txtLoginPassword"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:text=""
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="220dp"
+                tools:layout_editor_absoluteY="10dp" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="100dp" />
+        </TableRow>
+</TableLayout>

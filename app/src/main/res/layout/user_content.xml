@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.houser.garima.calculator.UserActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/lblFirstValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="First Value"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <EditText
+            android:id="@+id/txtFirstValue"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="8dp" />
+    </TableRow>
+    <TableRow> <TextView
+        android:id="@+id/lblSecondValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Second Value"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+        <EditText
+            android:id="@+id/txtSecondValue"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="8dp" />
+    </TableRow>
+    <TableRow></TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/lblCalculatedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/LoginSuccessMessage"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="220dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+         </TableRow>
+    <TableRow>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="100dp" />
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Subtract"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Multiply"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="100dp" />
+        <Button
+            android:id="@+id/btnDivision"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Division"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="100dp" />
+    </TableRow>
+</TableLayout>
